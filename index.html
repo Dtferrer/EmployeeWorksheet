@@ -4,9 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Employee Worksheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
-<body>
-    
+<body style="margin: auto">
+    <div class="jumbotron" style="background-color: black; color: white; text-align: center">
+            <h1>Employee Data Management</h1>
+            <p>A Comprehensive Directory of Employee Billable Hours</p>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">Current Employees</div>
+        <div class="panel-body">
+        </div>
+        <table class="table">
+            <tr>
+                <b>
+                <th>Employee Name</th>
+                <th>Role</th>
+                <th>Start Date</th>
+                <th>Months Worked</th>
+                <th>Monthly Rate ($)</th>
+                <th>Total Billed ($)</th>
+                </b>
+            </tr>
+        </table>
+    </div>
+    <form>
+        <div class="form-group">
+          <label for="Employee">Employee Name</label>
+          <input type="email" class="form-control" id="InputEmp" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label for="Role">Role</label>
+          <input type="role" class="form-control" id="InputRole" placeholder="Role">
+        </div>
+        <div class="form-group">
+            <label for="StartDate">Start Date (MM/DD/YYYY)</label>
+            <input type="date" class="form-control" id="InputStart" placeholder="MM/DD/YYYY">
+        </div>
+        <div class="form-group">
+            <label for="Rate">Monthly Rate</label>
+            <input type="rate" class="form-control" id="InputRate" placeholder="Rate">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
 </body>
 </html>
